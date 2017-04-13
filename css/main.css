@@ -1,12 +1,113 @@
 
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('../fonts/hkgrotesk-bold-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('../fonts/hkgrotesk-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('../fonts/hkgrotesk-italic-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('../fonts/hkgrotesk-light-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('../fonts/hkgrotesk-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-lightitalic-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('../fonts/hkgrotesk-regular-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('../fonts/hkgrotesk-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('../fonts/hkgrotesk-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/hkgrotesk-semibolditalic-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
 body{
-  padding-top: 50px;
+    font-family: 'hk_grotesk', Arial, sans-serif;
+  /*padding-top: 50px;*/
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'hk_grotesk', Arial, sans-serif;
+}
+
+body{
+  /*padding-top: 50px;*/
 }
 section{
-  height: 100vh;
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  border: 10px #FF5A5F solid;
 }
 
 #map-all{
+  margin-top: 100px;
   width: 100%;
   height: 400px;
+}
+
+.navbar.navbar-fixed-top{
+  background-color: white;
+}
+
+iframe{
+  margin-top: 100px;
+}
+
+.navbar-brand, .navbar-nav>li>a{
+  color: black;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+  color: #FF5A5F;
+}
+
+.buttons{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.buttons .btn{
+  margin-left: 15px;
 }

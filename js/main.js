@@ -73,8 +73,8 @@ $('document').ready(function(){
           "type": "circle",
           "source": "rents",
           "paint": {
-              "circle-radius": 2
-
+              "circle-radius": 2,
+              "circle-color":'#FF5A5F'
           }
         });
       })

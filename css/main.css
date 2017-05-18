@@ -38,6 +38,7 @@ h1,h2{
   left: 0px;
   top: 0px;
   bottom: 0px;
+  z-index: 10;
 }
 
 .right-border{
@@ -47,6 +48,7 @@ h1,h2{
   right: 0px;
   top: 0px;
   bottom: 0px;
+  z-index: 10;
 }
 
 .top-border{
@@ -56,6 +58,7 @@ h1,h2{
   left: 0px;
   top: 0px;
   right: 0px;
+  z-index: 10;
 }
 
 .bottom-border{
@@ -64,6 +67,7 @@ h1,h2{
   background-color: #FF5A5F;
   left: 0px;
   right: 0px;
+  z-index: 10;
 }
 
 section{

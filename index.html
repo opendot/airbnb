@@ -11,7 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.css' rel='stylesheet' />
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -20,51 +22,33 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">OPEN AIRBNB</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-          <li><a href="#intro">Intro</a></li>
-          <li class="active"><a href="#all">Overview</a></li>
-          <li><a href="#vs">Mid-step</a></li>
-          <li><a href="#plane">Plane</a></li>
-        </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
 
     <section id="intro">
 
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div id="map-all">
+            <h1>Open Airbnb</h1>
+            <p>
+              <span class="start">rationale</span> Lorem ipsum dolor sit amet, mei ne dicta mediocrem deterruisset. At feugait singulis mel.
+              Mei solet deleniti appareat id, et mei fugit maiestatis constituam. Insolens nominati complectitur per ei, ut illud sententiae definitionem usu.
+              Movet iriure moderatius quo id, ex per accumsan noluisse, mutat error referrentur ei est.
+              Lorem ipsum dolor sit amet, mei ne dicta mediocrem deterruisset. At feugait singulis mel.
+              <br>
+              <span class="start">how we did it</span>
+              An per sumo eirmod consequat, mea aperiri facilisis interesset at. <a href="#test">Ex pertinacia voluptatibus qui.</a> Tota detracto oporteat an cum. Nemore quaerendum in usu, meis tempor argumentum per ne, ignota principes his ad. Eam autem omnes salutatus ea.
+              Movet iriure moderatius quo id, ex per accumsan noluisse, mutat error referrentur ei est.
+              Movet iriure moderatius quo id, ex per accumsan noluisse, mutat error referrentur ei est.
+              <br>
+              <span class="start">disclaimer</span>
+              An per sumo eirmod consequat, mea aperiri facilisis interesset at
+              Mei solet deleniti appareat id, et mei fugit maiestatis constituam. Insolens nominati complectitur per ei, ut illud sententiae definitionem usu.
+            </p>
 
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="buttons">
+            <p class="explore">
+              <a href="#all" type="button" class="btn btn-default btn-lg">EXPLORE</a>
+            </p>
 
-            </div>
-            <!-- <div class="btn-group" data-toggle="buttons" id="type">
-              <label class="btn btn-default active">
-                <input type="checkbox" name="options" id="single" value="single" checked="true">Single Room
-              </label>
-              <label class="btn btn-default active">
-                <input type="checkbox" name="options" id="apt" value="apt" checked="true"> Entire Apartment
-              </label>
-            </div> -->
           </div>
         </div>
       </div>
@@ -73,48 +57,177 @@
 
     <section id="all">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <iframe src="grid/index.html" width="100%" height="500px" frameborder="0"></iframe>
+      <div class="map-all-container">
+        <div id="map-all">
+
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 white-ribbon">
+              <h2><span class="desc-number">01</span> – NoLo district</h2>
+              <p class="section-description">
+                <span class="start">scraping</span> Lorem ipsum dolor sit amet, mei ne dicta mediocrem deterruisset. At feugait singulis mel.
+                Mei solet deleniti appareat id, et mei fugit maiestatis constituam.
+                Insolens nominati complectitur per ei, ut illud sententiae definitionem usu.
+                <br />
+                <span class="entire">entire home</span>, <span class="private">private room</span>, <span class="shared">shared room</span>
+                Tota detracto oporteat an cum.
+                Nemore quaerendum in usu, meis tempor argumentum per ne, ignota principes his ad. Eam autem omnes salutatus ea.
+              </p>
+              <p class="next">
+                <a href="#idw" type="button" class="btn btn-default btn-sm">NEXT</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons-all-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+                <span class="buttons btn-group btn-group-justified">
+              </span>
+            </div>
           </div>
         </div>
       </div>
 
+
     </section>
 
-    <section id="vs">
+<section id="idw">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-              <iframe src="mesh/index.html" width="100%" height="500px" frameborder="0"></iframe>
-          </div>
+  <div class="map-idw-container">
+    <div id="map-idw">
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 white-ribbon">
+          <h2><span class="desc-number">02</span> – Idw analysis</h2>
+          <p class="section-description">
+            <span class="start">idw is awesome</span> Lorem ipsum dolor sit amet Tota detracto oporteat an cum.
+          </p>
+          <ol>
+            <li>
+              <button id="idwAll" type="button" class="btn btn-link">All rents</button>
+            </li>
+            <li>
+              <button id="idwHome" type="button" class="btn btn-link">Just entire home</button>
+            </li>
+            <li>
+              <button id="idwSize" type="button" class="btn btn-link">Size by price</button>
+            </li>
+            <li>
+              <button id="idwGrid" type="button" class="btn btn-link">Grid</button>
+            </li>
+            <li>
+              <button id="idwFlat" type="button" class="btn btn-link">Idw flat</button>
+            </li>
+            <li>
+              <button id="idwFinal" type="button" class="btn btn-link">Extrude it!</button>
+            </li>
+          </ol>
+          <p>
+            Lorem ipsum dolor sit amet Tota detracto oporteat an cum, <button id="idwHospital" type="button" class="btn btn-link">hospital</button>
+          </p>
+          <p class="next">
+            <a href="#mesh" type="button" class="btn btn-default btn-sm">NEXT</a>
+          </p>
         </div>
       </div>
+    </div>
+  </div>
 
-    </section>
+</section>
 
-    <section id="plane">
+<section id="mesh">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+  <div class="map-mesh-container">
+    <div id="map-mesh">
 
-          </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 white-ribbon">
+          <h2><span class="desc-number">03</span> – Meshing</h2>
+          <p class="section-description">
+            <span class="start">Three.js is awesome</span> Lorem ipsum dolor sit amet Tota detracto oporteat an cum.
+              An per sumo eirmod consequat, mea aperiri facilisis interesset at. <a href="#test">Ex pertinacia voluptatibus qui.</a> Tota detracto oporteat an cum. Nemore quaerendum in usu, meis tempor argumentum per ne, ignota principes his ad. Eam autem omnes salutatus ea.
+          </p>
+          <p class="next">
+            <a href="#end" type="button" class="btn btn-default btn-sm">NEXT</a>
+          </p>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="buttons-all-container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+            <span class="buttons btn-group btn-group-justified">
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    </section>
+</section>
 
+<section id="end">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h1>Credits</h1>
+        <p class="section-description">
+          <b>Matteo Azzi</b> / <a href="http://calib.ro">calib.ro</a>
+        </p>
+        <p class="section-description">
+          <b>Michele Ferretti</b> / <a href="http://micheleferretti.io/">micheleferretti.io</a>
+        </p>
+        <p class="section-description">
+          <b>Nicolas Barradeau</b> / <a href="http://www.barradeau.com/">barradeau.com</a>
+        </p>
+        <br />
+        <p class="section-description">
+          This is a group project done during the <a href="http://www.opendotlab.it/it/content/real-time-maps-urban-dataviz-navigation">first module</a> of the <a href="http://www.opendotlab.it/it/content/cityai">CITYAi</a> research and training program.
+          The workshop was organised and hosted by <b><a href="http://www.opendotlab.it/">Opendot Lab</a></b> between the 11<sup>th</sup> and 13<sup>th</sup> of April 2017.
+        </p>
+
+        <br />
+        <p class="section-description">
+          You can find the code and the data here: <b><a href="https://github.com/opendot/airbnb">github.com/opendot/airbnb</a></b>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div class="left-border">
+
+      </div>
+      <div class="right-border">
+
+      </div>
+      <div class="top-border">
+
+      </div>
+      <div class="bottom-border">
+
+      </div>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
-<script src='https://api.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.js'></script>
-
-        <script src="js/main.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+      <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+      <script src='https://api.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.js'></script>
+      <script src="js/vendor/threebox.js" type="text/javascript"></script>
+      <script src="js/vendor/cdt2d.min.js"></script>
+      <script src="js/vendor/fileLoader.js"></script>
+      <script src="js/vendor/TweenLite.min.js"></script>
+      <script src="js/main.js"></script>
     </body>
 </html>

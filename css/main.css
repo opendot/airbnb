@@ -1,113 +1,310 @@
-
 @font-face {
-    font-family: 'hk_grotesk';
-    src: url('../fonts/hkgrotesk-bold-webfont.woff2') format('woff2'),
-         url('../fonts/hkgrotesk-bold-webfont.woff') format('woff');
+    font-family: 'aileron';
+    src: url('../fonts/aileron-bold-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+
 }
 
 @font-face {
-    font-family: 'hk_grotesk';
-    src: url('../fonts/hkgrotesk-bolditalic-webfont.woff2') format('woff2'),
-         url('../fonts/hkgrotesk-bolditalic-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'hk_grotesk';
-    src: url('../fonts/hkgrotesk-italic-webfont.woff2') format('woff2'),
-         url('../fonts/hkgrotesk-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'hk_grotesk';
-    src: url('../fonts/hkgrotesk-light-webfont.woff2') format('woff2'),
-         url('../fonts/hkgrotesk-light-webfont.woff') format('woff');
-    font-weight: lighter;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'hk_grotesk';
-    src: url('../fonts/hkgrotesk-lightitalic-webfont.woff2') format('woff2'),
-         url('../fonts/hkgrotesk-lightitalic-webfont.woff') format('woff');
-    font-weight: lighter;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'hk_grotesk';
-    src: url('../fonts/hkgrotesk-regular-webfont.woff2') format('woff2'),
-         url('../fonts/hkgrotesk-regular-webfont.woff') format('woff');
+    font-family: 'aileron';
+    src: url('../fonts/aileron-regular-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
 
-@font-face {
-    font-family: 'hk_grotesk';
-    src: url('../fonts/hkgrotesk-semibold-webfont.woff2') format('woff2'),
-         url('../fonts/hkgrotesk-semibold-webfont.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'hk_grotesk';
-    src: url('../fonts/hkgrotesk-semibolditalic-webfont.woff2') format('woff2'),
-         url('../fonts/hkgrotesk-semibolditalic-webfont.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
 }
 
 body{
-    font-family: 'hk_grotesk', Arial, sans-serif;
-  /*padding-top: 50px;*/
+  font-family: 'Source Code Pro', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'hk_grotesk', Arial, sans-serif;
+  font-family: 'aileron', Arial, sans-serif;
 }
 
-body{
-  /*padding-top: 50px;*/
+h1,h2{
+  font-weight: bold;
 }
+
+.left-border{
+  position: fixed;
+  width: 15px;
+  background-color: #FF5A5F;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.right-border{
+  position: fixed;
+  width: 15px;
+  background-color: #FF5A5F;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.top-border{
+  position: fixed;
+  height: 15px;
+  background-color: #FF5A5F;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+
+.bottom-border{
+  position: absolute;
+  height: 15px;
+  background-color: #FF5A5F;
+  left: 0px;
+  right: 0px;
+}
+
 section{
-  margin-top: 50px;
-  height: calc(100vh - 50px);
-  border: 10px #FF5A5F solid;
+  height: 100vh;
 }
 
-#map-all{
-  margin-top: 100px;
-  width: 100%;
-  height: 400px;
+
+#intro{
+  display: flex;
+  align-items: center;
 }
 
-.navbar.navbar-fixed-top{
-  background-color: white;
-}
-
-iframe{
-  margin-top: 100px;
-}
-
-.navbar-brand, .navbar-nav>li>a{
-  color: black;
-}
-
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
-  color: #FF5A5F;
-}
-
-.buttons{
+#intro h1{
   text-align: center;
-  margin-top: 15px;
+  font-size: 110px;
+  margin-bottom: 50px;
+}
+
+#intro p{
+  column-count: 2;
+  column-gap: 30px;
+}
+
+#intro p a,
+.white-ribbon .btn-link{
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #FF5A5F;
+  transition: all 0.25s;
+}
+
+#intro p a:hover,
+.white-ribbon  .btn-link:hover,
+.white-ribbon  .btn-link:focus {
+  text-decoration: none;
+  color: #FF5A5F;
+  border-bottom: 1px solid white;
+}
+
+.white-ribbon  .btn-link{
+  padding: 0;
+}
+
+.explore{
+  text-align: center;
+  margin-top: 50px;
+  column-count: 1!important;
+}
+
+.explore .btn-default {
+    color: #fff!important;
+    background-color: #FF5A5F!important;
+    border-color: #fff!important;
+    transition: all 0.25s;
+}
+
+.explore .btn-lg{
+    border-radius: 0px;
+}
+
+.explore .btn-default:hover,
+.explore .btn-default:focus,
+.explore .btn-default:active {
+    color: #FF5A5F!important;
+    background-color: white!important;
+    border-color:  #FF5A5F!important;
+  }
+
+.entire{
+  color: white;
+  background-color: #513A50;
+  padding: 1px 5px;
+  font-weight:bold;
+}
+
+.private{
+  color: white;
+  background-color: #FAB347;
+  padding: 1px 5px;
+    font-weight:bold;
+}
+
+.shared{
+  color: white;
+  background-color: #FF5A5F;
+    padding: 1px 5px;
+    font-weight:bold;
+}
+
+#intro .start{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#all,
+#idw,
+#mesh {
+  display: flex;
+  flex-direction: column;
+}
+
+#all .map-all-container,
+#idw .map-idw-container,
+#mesh .map-mesh-container {
+  flex-grow: 1;
+  position: relative;
+}
+
+#all .buttons-all-container,
+#mesh .buttons-all-container{
+  flex-grow: 0;
+  margin-top: auto;
+}
+
+
+#map-all,
+#map-idw,
+#map-mesh {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 15px;
+  right: 15px;
+}
+
+.next{
+  text-align: right;
+}
+
+.next .btn-default {
+    color: #fff!important;
+    background-color: #FF5A5F!important;
+    border-color: #fff!important;
+    transition: all 0.25s;
+}
+
+.next .btn-sm{
+    border-radius: 0px;
+}
+
+.next .btn-default:hover,
+.next .btn-default:focus,
+.next .btn-default:active {
+    color: #FF5A5F!important;
+    background-color: white!important;
+    border-color:  #FF5A5F!important;
+  }
+
+.buttons .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #FF5A5F;
 }
 
 .buttons .btn{
-  margin-left: 15px;
+  border-radius: 0px;
+  border-width: 2px 1px;
+  font-size: 18px;
+  padding: 8px 16px;
+  font-family: 'aileron', Arial, sans-serif;
+  font-weight: bold;
+  transition: all 0.25s;
+}
+
+.buttons .btn:first-of-type{
+  border-left: 0px;
+}
+
+.buttons .btn:last-of-type{
+  border-right: 0px;
+}
+
+.buttons .btn:active,
+.buttons .btn.active{
+  color: white;
+  background-color: #FF5A5F;
+}
+
+.section-description{
+  /*font-weight: bold;*/
+}
+
+.section-description a{
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #FF5A5F;
+  transition: all 0.25s;
+}
+
+.section-description a:hover{
+  text-decoration: none;
+  color: #FF5A5F;
+  border-bottom: 1px solid white;
+}
+
+.section-description .start{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.white-ribbon{
+  background-color: white;
+}
+
+.white-ribbon h2{
+  margin: 70px 0 30px 0;
+}
+
+.desc-number{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.mapboxgl-ctrl-group {
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    overflow: hidden;
+    background: #fff;
+}
+
+#end{
+  background: #FF5A5F;
+  color: white;
+  padding-top: 100px;
+}
+
+#end h1{
+  margin-bottom: 50px;
+}
+
+#end .section-description a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    transition: all 0.25s;
+}
+
+#end .section-description a:hover {
+    text-decoration: none;
+    color: #FF5A5F;
+    background-color: white;
+    border-bottom: 1px solid white;
 }
